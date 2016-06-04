@@ -1,20 +1,14 @@
 %% 
-%% FILE: qpsr.cls
+%% FILE: fonetik.cls
 %%
-%% USAGE:    \documentclass[a4paper,twoside,12pt]{qpsr}
+%% USAGE:    \documentclass{fonetik}
 %%
-%% PURPOSE: LaTeX2e class file for the QPSR publication.
+%% PURPOSE: LaTeX2e class file for the Fonetik conference.
 %%
 %% ADDITIONAL COMMANDS:
-%%  \affiliation{} still very rudimental
-%%  \abstracttext{} use this in the preamble to define the abstract
-%%     text. Then \maketitle is sufficient to create the abstract
-%%  \volume{} defines the QPSR volume
-%%  \pubyear{} defines publication year
-%%  \firstpage{} defines the first page of the document
-%% The last two are used for the headers (ask Cathrin for the values)
+%%  \affil{} for the affiliation (from package affil-it)
 %% 
-%% Copyright 2004 Giampiero Salvi 
+%% Copyright 2016 Giampiero Salvi 
 %% 
 %% The author is not responsible for the layout definition, but
 %% only for its implementation
