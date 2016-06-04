@@ -43,7 +43,7 @@
                 lmargin=22.5mm,
                 rmargin=22.5mm,
                 tmargin=17.5mm,
-                bmargin=17.5mm]{geometry}
+                bmargin=18.5mm]{geometry}
 \RequirePackage{natbib}
 \RequirePackage{times}
 \RequirePackage[affil-it]{authblk}
