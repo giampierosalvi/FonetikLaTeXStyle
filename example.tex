@@ -15,6 +15,8 @@
 \usepackage{array}
 % - to insert nice eps figures
 \usepackage{graphicx}
+% tell the package where to find the figures
+\graphicspath{{figures/}}
 
 % defining hyphenation for difficult words is also optional
 \hyphenation{si-mu-la-tion re-so-nance mo-dels}
@@ -114,19 +116,19 @@ commands. This is an example:
 \begin{figure}
 \centering
 \includegraphics
-  [width=\columnwidth]
-  {figures/figb.eps}
-\caption{An abstract figure.}
-\label{fig:abstract}
+  [width=\columnwidth]{figb}
+\caption{A single column
+         figure.}
+\label{fig:single}
 \end{figure}
 \end{verbatim}
-The above code is used to produce Figure~\ref{fig:abstract}. Note that
-I used the command \verb|\ref{fig:abstract}| to generate the figure
+The above code is used to produce Figure~\ref{fig:single}. Note that
+I used the command \verb|\ref{fig:single}| to generate the figure
 number in the previous sentence.
 \begin{figure}
 \center
-\includegraphics[width=\columnwidth]{figures/figb.eps}
-\caption{A single column figure.}\label{fig:abstract}
+\includegraphics[width=\columnwidth]{figb}
+\caption{A single column figure.}\label{fig:single}
 \end{figure}
 
 If you want to include figures that span two columns, use the
@@ -178,8 +180,8 @@ table, i.e
 
 \begin{figure*}[!t]
 \centering
-\includegraphics[width=\textwidth]{figures/figa.eps}
-\caption{A two-column figure.} \label{fig:concrete}
+\includegraphics[width=\textwidth]{figa}
+\caption{A two-column figure.} \label{fig:twocol}
 \end{figure*}
 
 The above code is used to generate Table~\ref{tab:example}. Note that in this
@@ -230,7 +232,7 @@ filler filler filler filler filler filler filler filler filler
 
 \section{A last example}
 As promised in a previous section an example of a
-two-column figure is Figure~\ref{fig:concrete}
+two-column figure is Figure~\ref{fig:twocol}
 
 \section{Acknowledgement}
 The author is grateful to all the nice people using \LaTeX\ to typeset
