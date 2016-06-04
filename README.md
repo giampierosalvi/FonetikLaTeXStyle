@@ -1,5 +1,5 @@
 # FonetikLaTeXStyle
-LaTeX style for the Swedish Phonetics conference (Fonetik)
+LaTeX style for the Swedish Phonetics conference [Fonetik](http://fonetik.se/)
 
 * __fonetik.cls__: LaTeX2e class file defining the style
 * __fonetik.bst__: BibTeX definitions for the bibliography
