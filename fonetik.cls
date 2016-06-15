@@ -38,7 +38,6 @@
                 rmargin=22.5mm,
                 tmargin=17.5mm,
                 bmargin=18.5mm]{geometry}
-\RequirePackage{natbib}
 \RequirePackage{times}
 \RequirePackage[affil-it]{authblk}
 \RequirePackage{etoolbox}
