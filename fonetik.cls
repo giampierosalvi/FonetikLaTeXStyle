@@ -42,7 +42,6 @@
 \RequirePackage[affil-it]{authblk}
 \RequirePackage{etoolbox}
 \RequirePackage[noindentafter]{titlesec}
-\RequirePackage{titling}
 %\RequirePackage{fontspec}
 % gap between columns
 \setlength{\columnsep}{6mm}
@@ -50,12 +49,28 @@
 \setcounter{secnumdepth}{0}
 % disable page numbering
 \pagenumbering{gobble}
-% lift up title
-\setlength{\droptitle}{-2.5em}
-% Specify different font for section headings
+% Specify different font and spacing for the title
 \makeatletter
-\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{12}{13}\bfseries\@title}{}{}
+\renewcommand\@maketitle{%
+  \newpage
+  \null
+  \begin{center}%
+  \let \footnote \thanks
+    {\fontsize{14}{15}\bfseries \@title \par}%
+    \vskip 0.5em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
 \makeatother
+
+\setlength{\affilsep}{0cm}
 \renewcommand\Authfont{\fontsize{10}{11}\itshape}
 \renewcommand\Affilfont{\fontsize{10}{11}\itshape}
 \titleformat*{\section}{\fontsize{11}{12}\bfseries}
