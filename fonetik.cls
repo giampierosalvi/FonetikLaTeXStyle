@@ -40,10 +40,10 @@
                 bmargin=18.5mm]{geometry}
 \RequirePackage{natbib}
 \RequirePackage{times}
+\RequirePackage{titling} % needs to come before authblk for compatibility
 \RequirePackage[affil-it]{authblk}
 \RequirePackage{etoolbox}
 \RequirePackage[noindentafter]{titlesec}
-\RequirePackage{titling}
 %\RequirePackage{fontspec}
 % gap between columns
 \setlength{\columnsep}{6mm}
